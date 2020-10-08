@@ -10,9 +10,12 @@ var allPlayers
 
 var canvas,backgroundImg;
 
+var car1,car2,car3,car4,cars;
+
+var distance = 0;
 
 function setup(){
-    createCanvas(500,500);
+    createCanvas(displayWidth-20,displayHeight-30);
     database = firebase.database();
 
     
@@ -44,6 +47,5 @@ function draw(){
 
 
 
-    drawSprites();
 }
 
